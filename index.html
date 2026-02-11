@@ -377,12 +377,12 @@
             align-items: flex-start;
             text-align: left;
             max-width: 1150px;
-            margin: 0 auto;
+            margin: 0px;
         }
 
         .scenario-layout .text-col {
             flex: 1.1;
-            font-size: 0.42em;
+            font-size: 0.55em;
         }
 
         .scenario-layout .text-col p {
@@ -392,7 +392,7 @@
 
         .scenario-layout .text-col ul {
             margin: 0;
-            padding-left: 1.4em;
+            padding-left: 1em;
         }
 
         .scenario-layout .text-col li {
@@ -420,11 +420,13 @@
             align-items: flex-start;
             text-align: left;
             max-width: 1150px;
-            margin: 0 auto;
+            margin: 0px;
+            margin-top: 10px;
         }
 
         .two-column .col {
             flex: 1;
+            max-width: 50%;
         }
 
         .two-column .col-narrow {
@@ -434,7 +436,7 @@
         .two-column ul {
             margin: 0;
             padding-left: 1em;
-            font-size: 0.62em;
+            font-size: 0.7em;
         }
 
         .two-column li {
@@ -443,7 +445,7 @@
         }
 
         .two-column p {
-            font-size: 0.62em;
+            font-size: 0.55em;
             margin-bottom: 0.4em;
             line-height: 1.3;
         }
@@ -782,6 +784,11 @@
         .x-axis-arrow {
             font-size: 1.2rem;
         }
+
+        .metr-chart-container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -797,7 +804,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">1</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <div class="cover-content">
@@ -817,7 +824,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">2</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>Who are we?</h2>
@@ -850,7 +857,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">3</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>What is CFG?</h2>
@@ -873,7 +880,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">3</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>Workshop Journey</h2>
@@ -915,7 +922,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">5</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>Focused themes</h2>
@@ -938,7 +945,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">4</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>What is a Scenario</h2>
@@ -1001,22 +1008,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 5: Scenarios Section -->
-            <section class="center-slide section-break" data-background-image="images/section-break-background.png" data-background-size="cover" data-background-position="center">
-                <div class="slide-header">
-                    <div class="header-left">
-                        <div class="header-line-short"></div>
-                        <div class="header-brand"><strong>c.f.g</strong> <em></em></div>
-                    </div>
-                    <div class="header-right">
-                        <div class="header-line-long"></div>
-                        <div class="header-number">5</div>
-                    </div>
-                </div>
-                <h1 class="section-title">Scenarios</h1>
-            </section>
-
-            <!-- SLIDE 6: Plateau -->
+            <!-- SLIDE 5: METR Time Horizon (script-generated) -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1025,7 +1017,129 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">6</div>
+                        <div class="header-number"></div>
+                    </div>
+                </div>
+                <h2 style="margin-bottom: 0.1em;">AI Task Horizon Over Time</h2>
+                <p style="font-size: 0.52em; color: #475569; margin-bottom: 0.3em;">How long can AI models work autonomously? The task length AI can handle is doubling roughly every 4 months.</p>
+                <div class="metr-chart-container">
+                    <div id="metr-chart"></div>
+                </div>
+                <p class="small-text" style="text-align: right; margin-top: 0.1em; padding-right: 1em;">Source: METR Horizon v1.1 benchmark</p>
+            </section>
+
+            <!-- SLIDE 6: Safety Challenges -->
+            <section>
+                <div class="slide-header">
+                    <div class="header-left">
+                        <div class="header-line-short"></div>
+                        <div class="header-brand"><strong>c.f.g</strong> <em></em></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-line-long"></div>
+                        <div class="header-number"></div>
+                    </div>
+                </div>
+                <h2>Safety challenges remain unsolved as capabilities accelerate</h2>
+                <div class="two-column">
+                    <div class="text-col">
+                        <ul>
+                            <li><strong>Malicious use:</strong> Eroding barriers to misuse (bio and cyber), plus bypasses and weak "weight security".</li>
+                            <li><strong>Malfunctions:</strong> Ongoing reliability, bias, and control problems, with interpretability lagging behind capability gains.</li>
+                            <li><strong>Systemic risk:</strong> Competition and automation of AI R&D can accelerate deployment faster than safety research and governance can keep up.</li>
+                        </ul>
+                    </div>
+                    <div class="image-col">
+                        <img src="images/ai-safety-report-2026-cover.jpg" alt="AI Safety Report 2026">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: Compute & AI Access -->
+            <section>
+                <div class="slide-header">
+                    <div class="header-left">
+                        <div class="header-line-short"></div>
+                        <div class="header-brand"><strong>c.f.g</strong> <em></em></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-line-long"></div>
+                        <div class="header-number"></div>
+                    </div>
+                </div>
+                <h2>Compute and AI access has become a vector for geopolitical leverage</h2>
+                <div class="two-column">
+                    <div class="col">
+                        <ul>
+                            <li><strong>Access is strategic:</strong> models, chips, cloud, energy are choke points.</li>
+                            <li><strong>Security lens rising:</strong> controls, screening, critical infrastructure rules.</li>
+                            <li><strong>Power follows inputs:</strong> those who control compute and AI can set constraints.</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src="images/ai-supercomputers-performance-share-by-country.png" alt="AI supercomputers performance share by country" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: EU Awareness -->
+            <section>
+                <div class="slide-header">
+                    <div class="header-left">
+                        <div class="header-line-short"></div>
+                        <div class="header-brand"><strong>c.f.g</strong> <em></em></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-line-long"></div>
+                        <div class="header-number"></div>
+                    </div>
+                </div>
+                <h2>EU leaders show awareness of accelerating progress but lack action</h2>
+                <div class="two-column">
+                    <div class="col">
+                        <p><strong>Awareness is growing:</strong></p>
+                        <ul>
+                            <li><strong>Von der Leyen, Presidential Address 2025:</strong> "We thought AI would only approach human reasoning around 2050. Now we expect this to happen already next year."</li>
+                            <li><strong>Leaked Draft, EU Strategic Foresight Report 2025:</strong> "AGI is expected between 2027 and 2030, with ASI following 3&ndash;5 years later."</li>
+                            <li>So far: more words than actions. Flagship Apply AI Initiative backed by only &euro;1.1 billion.</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p><strong>New Frontier AI Initiative might change things:</strong></p>
+                        <ul>
+                            <li>Spearheaded by France and Germany, with support from the European Commission</li>
+                            <li>Set to become the "world's best-funded non-profit in AI"</li>
+                            <li>More like a new AI lab, with private, Member State and non-EU partners</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: Scenarios Section -->
+            <section class="center-slide section-break" data-background-image="images/section-break-background.png" data-background-size="cover" data-background-position="center">
+                <div class="slide-header">
+                    <div class="header-left">
+                        <div class="header-line-short"></div>
+                        <div class="header-brand"><strong>c.f.g</strong> <em></em></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-line-long"></div>
+                        <div class="header-number"></div>
+                    </div>
+                </div>
+                <h1 class="section-title">Scenarios</h1>
+            </section>
+
+            <!-- SLIDE 9: Plateau -->
+            <section>
+                <div class="slide-header">
+                    <div class="header-left">
+                        <div class="header-line-short"></div>
+                        <div class="header-brand"><strong>c.f.g</strong> <em></em></div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-line-long"></div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2><span class="scenario-badge badge-plateau">Plateau</span></h2>
@@ -1051,7 +1165,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 7: Big AI -->
+            <!-- SLIDE 10: Big AI -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1060,7 +1174,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">7</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2><span class="scenario-badge badge-bigai">Big AI</span></h2>
@@ -1086,7 +1200,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 8: Diplomacy -->
+            <!-- SLIDE 11: Diplomacy -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1095,7 +1209,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">8</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2><span class="scenario-badge badge-diplomacy">Diplomacy</span></h2>
@@ -1121,7 +1235,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 9: Arms Race -->
+            <!-- SLIDE 12: Arms Race -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1130,7 +1244,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">9</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2><span class="scenario-badge badge-armsrace">Arms Race</span></h2>
@@ -1156,7 +1270,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 10: Take-off -->
+            <!-- SLIDE 13: Take-off -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1165,7 +1279,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">10</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2><span class="scenario-badge badge-takeoff">Take-off</span></h2>
@@ -1191,7 +1305,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 11: Breakout Groups Section -->
+            <!-- SLIDE 14: Breakout Groups Section -->
             <section class="center-slide section-break" data-background-image="images/section-break-background.png" data-background-size="cover" data-background-position="center">
                 <div class="slide-header">
                     <div class="header-left">
@@ -1200,13 +1314,13 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">11</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h1 class="section-title">Breakout Groups</h1>
             </section>
 
-            <!-- SLIDE 12: Exercise Instructions -->
+            <!-- SLIDE 15: Exercise Instructions -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1215,7 +1329,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">12</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>Exercise Instructions</h2>
@@ -1240,7 +1354,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 13: Plenary Discussion -->
+            <!-- SLIDE 16: Plenary Discussion -->
             <section class="center-slide section-break" data-background-image="images/section-break-background.png" data-background-size="cover" data-background-position="center">
                 <div class="slide-header">
                     <div class="header-left">
@@ -1249,14 +1363,14 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">13</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h1 class="section-title">Plenary Discussion</h1>
                 <p class="subtitle" style="text-align: center;">Each group presents their top picks and own additions</p>
             </section>
 
-            <!-- SLIDE 14: Take-Aways Section -->
+            <!-- SLIDE 17: Take-Aways Section -->
             <section class="center-slide section-break" data-background-image="images/section-break-background.png" data-background-size="cover" data-background-position="center">
                 <div class="slide-header">
                     <div class="header-left">
@@ -1265,13 +1379,13 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">14</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h1 class="section-title">Take-Aways</h1>
             </section>
 
-            <!-- SLIDE 15: Five Futures Summary -->
+            <!-- SLIDE 18: Five Futures Summary -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1280,7 +1394,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">15</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2 style="margin-bottom: 0.2em;">Five Futures for AI: 2025 - 2032</h2>
@@ -1289,7 +1403,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 16: Power Concentration Insight -->
+            <!-- SLIDE 19: Power Concentration Insight -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1298,7 +1412,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">16</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2 style="font-size: 1.4em; margin-bottom: 0.4em;">AI may centralize power on unprecedented scales.</h2>
@@ -1310,7 +1424,7 @@
                 </ul>
             </section>
 
-            <!-- SLIDE 17: Innovation and Resilience Insight -->
+            <!-- SLIDE 20: Innovation and Resilience Insight -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1319,7 +1433,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">17</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2 style="font-size: 1.4em; margin-bottom: 0.4em;">Innovation and openness require resilience.</h2>
@@ -1331,7 +1445,7 @@
                 </ul>
             </section>
 
-            <!-- SLIDE 18: Upcoming Publication -->
+            <!-- SLIDE 21: Upcoming Publication -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1340,7 +1454,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">18</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2 style="font-size: 1.1em;">Upcoming: RAMP Policy Recommendations</h2>
@@ -1355,7 +1469,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 19: How to stay involved -->
+            <!-- SLIDE 22: How to stay involved -->
             <section>
                 <div class="slide-header">
                     <div class="header-left">
@@ -1364,7 +1478,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">19</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h2>How to stay involved?</h2>
@@ -1378,7 +1492,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 20: Discussion -->
+            <!-- SLIDE 23: Discussion -->
             <section class="center-slide section-break" data-background-image="images/section-break-background.png" data-background-size="cover" data-background-position="center">
                 <div class="slide-header">
                     <div class="header-left">
@@ -1387,7 +1501,7 @@
                     </div>
                     <div class="header-right">
                         <div class="header-line-long"></div>
-                        <div class="header-number">20</div>
+                        <div class="header-number"></div>
                     </div>
                 </div>
                 <h1 class="section-title">Discussion</h1>
@@ -1450,6 +1564,353 @@
 
         // Render after Reveal is ready
         Reveal.on('ready', renderMermaid);
+
+        // Auto-number slides: fills every .header-number with its 1-based slide index
+        Reveal.on('ready', () => {
+            document.querySelectorAll('.slides > section').forEach((section, i) => {
+                const num = section.querySelector('.header-number');
+                if (num) num.textContent = i + 1;
+            });
+        });
+
+        // ── METR Horizon Chart (generated from data/metr-horizon-v1.1.json) ──
+        (async function buildMetrChart() {
+            const container = document.getElementById('metr-chart');
+            if (!container) return;
+
+            // Embedded chart data (extracted from data/metr-horizon-v1.1.json)
+            // Only the fields the chart needs: doubling_time, release_date, p50_horizon_length, is_sota
+            const METR_DATA = {
+                doubling_time_in_days: { from_2023_on: { ci_high: 155.27, ci_low: 105.213, point_estimate: 128.12 } },
+                results: {
+                    claude_3_5_sonnet_20240620_inspect: { release_date: "2024-06-20", metrics: { is_sota: true, p50_horizon_length: { ci_high: 20.892402, ci_low: 4.726563, estimate: 10.771603 } } },
+                    claude_3_5_sonnet_20241022_inspect: { release_date: "2024-10-22", metrics: { is_sota: true, p50_horizon_length: { ci_high: 40.167901, ci_low: 9.669489, estimate: 19.776241 } } },
+                    claude_3_7_sonnet_inspect: { release_date: "2025-02-24", metrics: { is_sota: true, p50_horizon_length: { ci_high: 103.15522, ci_low: 32.488674, estimate: 59.763762 } } },
+                    claude_3_opus_inspect: { release_date: "2024-03-04", metrics: { is_sota: false, p50_horizon_length: { ci_high: 7.636566, ci_low: 1.41216, estimate: 3.575399 } } },
+                    claude_4_1_opus_inspect: { release_date: "2025-08-05", metrics: { is_sota: false, p50_horizon_length: { ci_high: 161.074728, ci_low: 59.798077, estimate: 100.84381 } } },
+                    claude_4_opus_inspect: { release_date: "2025-05-22", metrics: { is_sota: false, p50_horizon_length: { ci_high: 172.289314, ci_low: 59.494607, estimate: 101.182643 } } },
+                    claude_opus_4_5_inspect: { release_date: "2025-11-24", metrics: { is_sota: true, p50_horizon_length: { ci_high: 734.096977, ci_low: 172.952147, estimate: 320.422486 } } },
+                    davinci_002: { release_date: "2020-05-28", metrics: { is_sota: true, p50_horizon_length: { ci_high: 0.246039, ci_low: 0.07102, estimate: 0.148793 } } },
+                    gemini_3_pro: { release_date: "2025-11-18", metrics: { is_sota: true, p50_horizon_length: { ci_high: 442.590073, ci_low: 138.748224, estimate: 236.654674 } } },
+                    gpt2: { release_date: "2019-02-14", metrics: { is_sota: true, p50_horizon_length: { ci_high: 0.130397, ci_low: 0.002019, estimate: 0.039762 } } },
+                    gpt_3_5_turbo_instruct: { release_date: "2022-03-15", metrics: { is_sota: true, p50_horizon_length: { ci_high: 0.989884, ci_low: 0.227348, estimate: 0.604245 } } },
+                    gpt_4: { release_date: "2023-03-14", metrics: { is_sota: true, p50_horizon_length: { ci_high: 6.796939, ci_low: 1.539554, estimate: 3.524514 } } },
+                    gpt_4_1106_inspect: { release_date: "2023-11-06", metrics: { is_sota: true, p50_horizon_length: { ci_high: 7.169444, ci_low: 1.591756, estimate: 3.609578 } } },
+                    gpt_4_turbo_inspect: { release_date: "2024-04-09", metrics: { is_sota: false, p50_horizon_length: { ci_high: 5.871558, ci_low: 1.519109, estimate: 3.225159 } } },
+                    gpt_4o_inspect: { release_date: "2024-05-13", metrics: { is_sota: true, p50_horizon_length: { ci_high: 12.005238, ci_low: 3.507029, estimate: 6.404471 } } },
+                    gpt_5_1_codex_max_inspect: { release_date: "2025-11-19", metrics: { is_sota: false, p50_horizon_length: { ci_high: 453.466898, ci_low: 134.519378, estimate: 236.548491 } } },
+                    gpt_5_2: { release_date: "2025-12-11", metrics: { is_sota: true, p50_horizon_length: { ci_high: 1042.54945, ci_low: 197.995955, estimate: 394.383957 } } },
+                    gpt_5_2025_08_07_inspect: { release_date: "2025-08-07", metrics: { is_sota: true, p50_horizon_length: { ci_high: 479.89444, ci_low: 117.50858, estimate: 213.954459 } } },
+                    o1_inspect: { release_date: "2024-12-05", metrics: { is_sota: true, p50_horizon_length: { ci_high: 65.751345, ci_low: 20.748909, estimate: 37.937543 } } },
+                    o1_preview: { release_date: "2024-09-12", metrics: { is_sota: true, p50_horizon_length: { ci_high: 32.760986, ci_low: 11.144477, estimate: 19.395096 } } },
+                    o3_inspect: { release_date: "2025-04-16", metrics: { is_sota: true, p50_horizon_length: { ci_high: 201.358464, ci_low: 73.152427, estimate: 120.730463 } } }
+                }
+            };
+
+            // Use embedded data (works with file:// and http://)
+            const data = METR_DATA;
+
+            // ── Model metadata: display names, company mapping ──
+            const modelMeta = {
+                gpt2:                              { name: 'GPT-2',       company: 'openai' },
+                davinci_002:                       { name: 'Davinci',     company: 'openai' },
+                gpt_3_5_turbo_instruct:            { name: 'GPT-3.5',    company: 'openai' },
+                gpt_4:                             { name: 'GPT-4',       company: 'openai' },
+                gpt_4_1106_inspect:                { name: 'GPT-4 Turbo', company: 'openai' },
+                gpt_4_turbo_inspect:               { name: 'GPT-4T',     company: 'openai' },
+                gpt_4o_inspect:                    { name: 'GPT-4o',      company: 'openai' },
+                o1_preview:                        { name: 'o1-preview',  company: 'openai' },
+                o1_inspect:                        { name: 'o1',          company: 'openai' },
+                o3_inspect:                        { name: 'o3',          company: 'openai' },
+                gpt_5_2025_08_07_inspect:          { name: 'GPT-5',      company: 'openai' },
+                gpt_5_1_codex_max_inspect:         { name: 'GPT-5.1',    company: 'openai' },
+                gpt_5_2:                           { name: 'GPT-5.2',    company: 'openai' },
+                claude_3_opus_inspect:             { name: 'Claude 3 Opus', company: 'anthropic' },
+                claude_3_5_sonnet_20240620_inspect:{ name: 'Claude 3.5',   company: 'anthropic' },
+                claude_3_5_sonnet_20241022_inspect:{ name: 'Claude 3.5v2', company: 'anthropic' },
+                claude_3_7_sonnet_inspect:         { name: 'Claude 3.7',   company: 'anthropic' },
+                claude_4_opus_inspect:             { name: 'Claude 4',     company: 'anthropic' },
+                claude_4_1_opus_inspect:           { name: 'Claude 4.1',   company: 'anthropic' },
+                claude_opus_4_5_inspect:           { name: 'Opus 4.5',     company: 'anthropic' },
+                gemini_3_pro:                      { name: 'Gemini 3',     company: 'google' }
+            };
+
+            const companyColors = {
+                openai:    { dot: '#8098FF', text: '#4a6ed4' },   // --blue, --blue-dark
+                anthropic: { dot: '#F47D5B', text: '#c45a3d' },   // --red, --red-dark
+                google:    { dot: '#7cb668', text: '#5a9a4a' }    // --green-dark, --green-darker
+            };
+            const nonSotaColor = { dot: '#c4c0cc', text: '#94929e' };
+
+            // ── Parse and sort models ──
+            const models = Object.entries(data.results).map(([key, val]) => {
+                const m = val.metrics.p50_horizon_length;
+                const dateStr = String(val.release_date);
+                return {
+                    key,
+                    date: new Date(dateStr),
+                    timestamp: new Date(dateStr).getTime(),
+                    estimate: m.estimate,       // hours
+                    ciLow: m.ci_low,
+                    ciHigh: m.ci_high,
+                    isSota: val.metrics.is_sota,
+                    meta: modelMeta[key] || { name: key, company: 'unknown' }
+                };
+            }).sort((a, b) => a.timestamp - b.timestamp);
+
+            // ── Chart layout constants (SVG viewBox coords) ──
+            const W = 960, H = 480;
+            const pad = { top: 30, right: 40, bottom: 60, left: 110 };
+            const chartW = W - pad.left - pad.right;
+            const chartH = H - pad.top - pad.bottom;
+
+            // ── X-axis: date → pixel (linear time) ──
+            const dateMin = new Date('2019-01-01').getTime();
+            const dateMax = new Date('2026-03-01').getTime();
+            const xScale = (ts) => pad.left + ((ts - dateMin) / (dateMax - dateMin)) * chartW;
+
+            // ── Y-axis: hours → pixel (linear, 0 at bottom, max at top) ──
+            // Cap at 500h (~3 weeks) to keep point estimates visible;
+            // CI bars that exceed this are clamped to chart edge
+            const yMaxHours = 500;
+            const yScale = (hours) => pad.top + chartH - (hours / yMaxHours) * chartH;
+
+            // ── Fixed gridlines with human-readable labels ──
+            const gridValues = [
+                { h: 0,   label: '0' },
+                { h: 24,  label: '1 day' },
+                { h: 72,  label: '3 days' },
+                { h: 168, label: '1 wk' },
+                { h: 336, label: '2 wks' },
+                { h: 500, label: '3 wks' }
+            ];
+
+            // ── X-axis year ticks ──
+            const yearTicks = [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026];
+
+            // ── Trend line: exponential fit using doubling time ──
+            // From the data: doubling time ~128 days from 2023 onward
+            // We'll fit: horizon(t) = A * 2^((t - t0) / doublingDays)
+            // Anchor on GPT-4 (2023-03-14, 3.52h) as a reasonable SOTA reference
+            const doublingDays = data.doubling_time_in_days.from_2023_on.point_estimate;
+            const doublingMs = doublingDays * 86400000;
+            const anchorDate = new Date('2023-03-14').getTime();
+            const anchorHorizon = 3.52;
+            const trendFn = (ts) => anchorHorizon * Math.pow(2, (ts - anchorDate) / doublingMs);
+
+            // Trend CI bounds (using ci_low and ci_high doubling times)
+            const doublingLowMs  = data.doubling_time_in_days.from_2023_on.ci_low * 86400000;
+            const doublingHighMs = data.doubling_time_in_days.from_2023_on.ci_high * 86400000;
+            const trendHi = (ts) => anchorHorizon * Math.pow(2, (ts - anchorDate) / doublingLowMs);   // faster doubling → higher
+            const trendLo = (ts) => anchorHorizon * Math.pow(2, (ts - anchorDate) / doublingHighMs);  // slower doubling → lower
+
+            // ── Build SVG ──
+            const ns = 'http://www.w3.org/2000/svg';
+            const svg = document.createElementNS(ns, 'svg');
+            svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+            svg.setAttribute('xmlns', ns);
+            svg.style.cssText = 'width:100%;max-width:960px;height:auto;display:block;margin:0 auto;';
+
+            function el(tag, attrs, text) {
+                const e = document.createElementNS(ns, tag);
+                for (const [k, v] of Object.entries(attrs || {})) e.setAttribute(k, v);
+                if (text !== undefined) e.textContent = text;
+                return e;
+            }
+
+            // Chart background
+            svg.appendChild(el('rect', {
+                x: pad.left, y: pad.top, width: chartW, height: chartH,
+                fill: 'white', rx: 6, stroke: '#e2e0e8', 'stroke-width': 1
+            }));
+
+            // Y gridlines and labels
+            gridValues.forEach(({ h, label }) => {
+                const y = yScale(h);
+                svg.appendChild(el('line', {
+                    x1: pad.left, y1: y, x2: W - pad.right, y2: y,
+                    stroke: '#e8e8ec', 'stroke-width': 0.7
+                }));
+                svg.appendChild(el('text', {
+                    x: pad.left - 8, y: y + 5, 'text-anchor': 'end',
+                    'font-size': 14, fill: '#475569',
+                    'font-family': 'Plus Jakarta Sans, sans-serif'
+                }, label));
+            });
+
+            // Y-axis title
+            const yTitle = el('text', {
+                x: 18, y: pad.top + chartH / 2, 'text-anchor': 'middle',
+                'font-size': 15, fill: '#0E0705',
+                'font-family': 'Plus Jakarta Sans, sans-serif', 'font-weight': 500,
+                transform: `rotate(-90, 18, ${pad.top + chartH / 2})`
+            }, 'Task time horizon (50% success)');
+            svg.appendChild(yTitle);
+
+            // X-axis year labels
+            yearTicks.forEach(year => {
+                const ts = new Date(`${year}-01-01`).getTime();
+                const x = xScale(ts);
+                if (x >= pad.left && x <= W - pad.right) {
+                    svg.appendChild(el('text', {
+                        x, y: H - pad.bottom + 30, 'text-anchor': 'middle',
+                        'font-size': 14, fill: '#475569',
+                        'font-family': 'Plus Jakarta Sans, sans-serif'
+                    }, String(year)));
+                    // Tick mark
+                    svg.appendChild(el('line', {
+                        x1: x, y1: pad.top + chartH, x2: x, y2: pad.top + chartH + 5,
+                        stroke: '#475569', 'stroke-width': 1
+                    }));
+                }
+            });
+
+            // ── Trend band (confidence interval fill) ──
+            const trendSteps = 50;
+            const bandPoints = [];
+            // Forward pass (upper bound)
+            for (let i = 0; i <= trendSteps; i++) {
+                const ts = dateMin + (i / trendSteps) * (dateMax - dateMin);
+                const val = Math.min(trendHi(ts), yMaxHours);
+                bandPoints.push(`${xScale(ts).toFixed(1)},${yScale(Math.max(0, val)).toFixed(1)}`);
+            }
+            // Reverse pass (lower bound)
+            for (let i = trendSteps; i >= 0; i--) {
+                const ts = dateMin + (i / trendSteps) * (dateMax - dateMin);
+                const val = Math.max(trendLo(ts), 0);
+                bandPoints.push(`${xScale(ts).toFixed(1)},${yScale(val).toFixed(1)}`);
+            }
+            svg.appendChild(el('polygon', {
+                points: bandPoints.join(' '),
+                fill: '#A09AC8', opacity: 0.15
+            }));
+
+            // ── Trend line (dashed) ──
+            const trendLinePoints = [];
+            for (let i = 0; i <= trendSteps; i++) {
+                const ts = dateMin + (i / trendSteps) * (dateMax - dateMin);
+                const val = Math.min(trendFn(ts), yMaxHours);
+                trendLinePoints.push(`${xScale(ts).toFixed(1)},${yScale(Math.max(0, val)).toFixed(1)}`);
+            }
+            svg.appendChild(el('polyline', {
+                points: trendLinePoints.join(' '),
+                fill: 'none', stroke: '#A09AC8', 'stroke-width': 2.5,
+                'stroke-dasharray': '8,4', opacity: 0.7
+            }));
+
+            // ── Error bars and data points ──
+            // Decide which SOTA models get labels (to avoid clutter, label key milestones)
+            const labelSet = new Set([
+                'gpt2', 'davinci_002', 'gpt_3_5_turbo_instruct', 'gpt_4',
+                'o1_preview', 'claude_3_7_sonnet_inspect',
+                'o3_inspect', 'gpt_5_2025_08_07_inspect', 'gemini_3_pro',
+                'claude_opus_4_5_inspect', 'gpt_5_2'
+            ]);
+
+            models.forEach(m => {
+                const x = xScale(m.timestamp);
+                const y = yScale(m.estimate);
+                const yLo = yScale(m.ciLow);
+                const yHi = yScale(m.ciHigh);
+                const colors = m.isSota
+                    ? (companyColors[m.meta.company] || { dot: '#c4c0cc', text: '#475569' })
+                    : nonSotaColor;
+
+                // Clamp error bar to chart bounds
+                const yHiClamped = Math.max(yHi, pad.top);
+                const yLoClamped = Math.min(yLo, pad.top + chartH);
+
+                // Error bar (vertical line)
+                svg.appendChild(el('line', {
+                    x1: x, y1: yHiClamped, x2: x, y2: yLoClamped,
+                    stroke: colors.dot, 'stroke-width': 2, opacity: m.isSota ? 0.5 : 0.3
+                }));
+                // Error bar caps
+                const capW = 4;
+                svg.appendChild(el('line', {
+                    x1: x - capW, y1: yHiClamped, x2: x + capW, y2: yHiClamped,
+                    stroke: colors.dot, 'stroke-width': 2, opacity: m.isSota ? 0.5 : 0.3
+                }));
+                svg.appendChild(el('line', {
+                    x1: x - capW, y1: yLoClamped, x2: x + capW, y2: yLoClamped,
+                    stroke: colors.dot, 'stroke-width': 2, opacity: m.isSota ? 0.5 : 0.3
+                }));
+
+                // Data point circle
+                const r = m.isSota ? 6 : 5;
+                svg.appendChild(el('circle', {
+                    cx: x, cy: y, r,
+                    fill: colors.dot, stroke: 'white', 'stroke-width': 1.5,
+                    opacity: m.isSota ? 1 : 0.7
+                }));
+
+                // Label (only for selected SOTA models)
+                if (m.isSota && labelSet.has(m.key)) {
+                    // Default: label to the right and slightly above
+                    let lx = x + 10, ly = y - 6;
+                    let anchor = 'start';
+
+                    // Adjustments for specific models to avoid overlaps
+                    if (m.key === 'gpt2')                    { lx = x + 10; ly = y - 2; }
+                    if (m.key === 'davinci_002')              { lx = x + 10; ly = y - 2; }
+                    if (m.key === 'gpt_3_5_turbo_instruct')   { lx = x + 10; ly = y - 2; }
+                    if (m.key === 'gpt_4')                    { lx = x + 10; ly = y - 2; }
+                    if (m.key === 'o1_preview')               { lx = x - 10; ly = y - 8; anchor = 'end'; }
+                    if (m.key === 'claude_3_7_sonnet_inspect') { lx = x + 10; }
+                    if (m.key === 'o3_inspect')               { lx = x - 10; ly = y - 4; anchor = 'end'; }
+                    if (m.key === 'gpt_5_2025_08_07_inspect') { lx = x - 10; ly = y - 10; anchor = 'end'; }
+                    if (m.key === 'gemini_3_pro')             { lx = x - 10; ly = y - 10; anchor = 'end'; }
+                    if (m.key === 'claude_opus_4_5_inspect')  { lx = x + 10; ly = y + 4; }
+                    if (m.key === 'gpt_5_2')                  { lx = x + 10; ly = y - 10; }
+
+                    svg.appendChild(el('text', {
+                        x: lx, y: ly, 'text-anchor': anchor,
+                        'font-size': 12, fill: colors.text, 'font-weight': 600,
+                        'font-family': 'Plus Jakarta Sans, sans-serif'
+                    }, m.meta.name));
+                }
+            });
+
+            // ── Axes ──
+            svg.appendChild(el('line', {
+                x1: pad.left, y1: pad.top, x2: pad.left, y2: pad.top + chartH,
+                stroke: '#0E0705', 'stroke-width': 1.5
+            }));
+            svg.appendChild(el('line', {
+                x1: pad.left, y1: pad.top + chartH, x2: W - pad.right, y2: pad.top + chartH,
+                stroke: '#0E0705', 'stroke-width': 1.5
+            }));
+
+            // ── Legend ──
+            const legY = pad.top + 8;
+            const legX = pad.left + 20;
+            svg.appendChild(el('rect', {
+                x: legX, y: legY, width: 420, height: 50,
+                rx: 6, fill: 'white', stroke: '#e2e0e8', 'stroke-width': 1, opacity: 0.95
+            }));
+            // OpenAI
+            svg.appendChild(el('circle', { cx: legX + 16, cy: legY + 16, r: 5, fill: '#8098FF' }));
+            svg.appendChild(el('text', { x: legX + 27, y: legY + 20, 'font-size': 13, fill: '#0E0705', 'font-family': 'Plus Jakarta Sans, sans-serif' }, 'OpenAI'));
+            // Anthropic
+            svg.appendChild(el('circle', { cx: legX + 90, cy: legY + 16, r: 5, fill: '#F47D5B' }));
+            svg.appendChild(el('text', { x: legX + 101, y: legY + 20, 'font-size': 13, fill: '#0E0705', 'font-family': 'Plus Jakarta Sans, sans-serif' }, 'Anthropic'));
+            // Google
+            svg.appendChild(el('circle', { cx: legX + 185, cy: legY + 16, r: 5, fill: '#7cb668' }));
+            svg.appendChild(el('text', { x: legX + 196, y: legY + 20, 'font-size': 13, fill: '#0E0705', 'font-family': 'Plus Jakarta Sans, sans-serif' }, 'Google'));
+            // Non-frontier
+            svg.appendChild(el('circle', { cx: legX + 255, cy: legY + 16, r: 5, fill: '#c4c0cc' }));
+            svg.appendChild(el('text', { x: legX + 266, y: legY + 20, 'font-size': 13, fill: '#475569', 'font-family': 'Plus Jakarta Sans, sans-serif' }, 'Non-frontier'));
+            // Error bar legend
+            svg.appendChild(el('line', { x1: legX + 10, y1: legY + 38, x2: legX + 10, y2: legY + 42, stroke: '#8098FF', 'stroke-width': 2 }));
+            svg.appendChild(el('line', { x1: legX + 5, y1: legY + 38, x2: legX + 15, y2: legY + 38, stroke: '#8098FF', 'stroke-width': 2 }));
+            svg.appendChild(el('line', { x1: legX + 5, y1: legY + 42, x2: legX + 15, y2: legY + 42, stroke: '#8098FF', 'stroke-width': 2 }));
+            svg.appendChild(el('text', { x: legX + 22, y: legY + 44, 'font-size': 12, fill: '#475569', 'font-family': 'Plus Jakarta Sans, sans-serif' }, '95% CI'));
+            // Trend line legend
+            svg.appendChild(el('line', { x1: legX + 78, y1: legY + 40, x2: legX + 110, y2: legY + 40, stroke: '#A09AC8', 'stroke-width': 2.5, 'stroke-dasharray': '6,3' }));
+            svg.appendChild(el('text', { x: legX + 117, y: legY + 44, 'font-size': 12, fill: '#475569', 'font-family': 'Plus Jakarta Sans, sans-serif' }, 'Doubling ~every 4 months'));
+
+            container.appendChild(svg);
+        })();
     </script>
 </body>
 </html>
