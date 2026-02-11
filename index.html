@@ -325,31 +325,49 @@
         .journey-grid {
             display: flex;
             justify-content: center;
-            gap: 1em;
-            margin-top: 1em;
+            align-items: stretch;
+            gap: 0.7em;
+            margin-top: 2.5em;
         }
 
         .journey-card {
-            background: var(--grey);
-            padding: 0.6em;
-            border-radius: 8px;
-            width: 180px;
-            text-align: center;
+            background: white;
+            padding: 0.8em 0.7em;
+            border-radius: 10px;
+            flex: 1;
+            max-width: 230px;
+            text-align: left;
+            border: 1.5px solid #e2e0e8;
+            border-top: 3.5px solid var(--blue);
+            position: relative;
+        }
+
+        .journey-card:nth-child(2) { border-top-color: var(--green-dark); }
+        .journey-card:nth-child(3) { border-top-color: var(--red); }
+        .journey-card:nth-child(4) { border-top-color: var(--purple); }
+        .journey-card:nth-child(5) { border-top-color: var(--teal-dark); }
+
+        .journey-card .step-number {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 0.38em;
+            font-weight: 700;
+            color: #94a3b8;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.4em;
         }
 
         .journey-card h3 {
-            font-size: 0.8em;
-            margin-bottom: 0.2em;
+            font-size: 0.55em;
+            margin-bottom: 0.25em;
+            text-align: left;
         }
 
         .journey-card p {
-            font-size: 0.65em;
+            font-size: 0.42em;
             color: #475569;
-        }
-
-        .journey-icon {
-            font-size: 1.4em;
-            margin-top: 0.4em;
+            line-height: 1.45;
+            margin: 0;
         }
 
         /* Text + image scenario layout */
@@ -861,22 +879,27 @@
                 <h2>Workshop Journey</h2>
                 <div class="journey-grid">
                     <div class="journey-card">
-                        <h3>Introduction & Trends</h3>
+                        <div class="step-number">Step 1</div>
+                        <h3>Introduction &amp; Trends</h3>
                         <p>Brief overview of AI landscape and geopolitical dynamics</p>
                     </div>
                     <div class="journey-card">
+                        <div class="step-number">Step 2</div>
                         <h3>Scenarios Overview</h3>
                         <p>Five scenarios in condensed format using the grid view</p>
                     </div>
                     <div class="journey-card">
+                        <div class="step-number">Step 3</div>
                         <h3>Breakout Groups</h3>
                         <p>Policy options exercise in two groups: fast vs slower timelines</p>
                     </div>
                     <div class="journey-card">
+                        <div class="step-number">Step 4</div>
                         <h3>Plenary Discussion</h3>
                         <p>Compare picks, discuss trade-offs and areas of agreement</p>
                     </div>
                     <div class="journey-card">
+                        <div class="step-number">Step 5</div>
                         <h3>Wrap-up</h3>
                         <p>Key takeaways, upcoming publications, follow-up</p>
                     </div>
