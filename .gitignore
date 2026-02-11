@@ -10,5 +10,8 @@ desktop.ini
 .vscode/
 .idea/
 
+# Archive
+_archive/
+
 # Claude Code
 .claude/
